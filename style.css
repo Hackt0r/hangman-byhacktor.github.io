@@ -1,0 +1,191 @@
+:root {
+    --1: calc((1vw + 1vh) / 2);
+}
+
+* {
+    border: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: calc(var(--1)*2.5);
+    user-select: none;
+    color: black;
+
+    -webkit-tap-highlight-color: transparent;
+    /*#3A4454*/
+}
+
+body {
+    background-color: #bbff00;
+}
+
+.wrapper {
+    margin: auto;
+    margin-top: calc(var(--1)*1.6);
+    margin-bottom: 0;
+    width: calc(var(--1)*60);
+}
+
+#newgame {
+    height: calc(var(--1)*4);
+    width: 75%;
+    background-color: #6B4E71;
+    color: #F5DDDD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--1);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#szocontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2%;
+}
+
+.inputcontc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputcontainer {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 5px;
+    column-gap: 12px;
+    margin-top: var(--1);
+    width: 80%;
+}
+
+.input {
+    border: 2px solid black;
+    border-radius: 6px;
+    font-family: 'Courier Prime', monospace;
+    display: inline-flex;
+    width: calc(var(--1)*4);
+    height: calc(var(--1)*4);
+    justify-content: center;
+    align-items: center;
+    margin: 4px 0px 4px 0px;
+    box-shadow: 1px 1px black;
+    background-color: rgb(205, 223, 176);
+    cursor: pointer;
+}
+
+
+.butcont {
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: calc(var(--1)*2.5);
+    flex-wrap: wrap;
+}
+
+.nyert {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: calc(var(--1)*3);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.betucontainer {
+    display: flex;
+    position: relative;
+    height: calc(var(--1)*5);
+    justify-content: center;
+    align-items: center;
+    border-bottom: black solid calc(var(--1)/3);
+    margin-right: 3px;
+}
+
+.betu {
+    margin-top: var(--1);
+    padding-bottom: 0;
+    font-size: 1.9rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    color: black;
+    opacity: 0;
+}
+
+.ember-kep {
+    height: calc(var(--1)*22);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.emberimg {
+    height: calc(var(--1)*20);
+}
+
+@media(max-aspect-ratio: 72/100) {
+
+    .ember {
+        height: calc(var(--1)*35);
+    }
+
+    .wrapper {
+        width: 90%;
+        padding-bottom: 10%;
+        margin-top: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .inputcontainer {
+        width: 95%;
+    }
+
+    .input {
+        font-size: 1.7rem;
+        width: calc(var(--1)*7);
+        height: calc(var(--1)*7);
+        margin: 2px 0px 2px 2px;
+    }
+
+    .betucontainer {
+        height: calc(var(--1)*7);
+        justify-content: center;
+        align-items: center;
+        border-bottom: black solid calc(var(--1)/3);
+        margin-right: 3px;
+    }
+
+    .betu {
+        margin-top: var(--1);
+        padding-bottom: 0;
+        font-size: 3rem;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 400;
+        color: black;
+        opacity: 0;
+    }
+
+    #newgame {
+        width: 100%;
+        height: calc(var(--1)*7);
+        font-size: 1.5rem;
+    }
+
+    .nyert {
+        font-size: 1.7rem;
+    }
+}
+
+/* MOBIL EDITION BEFEJEZÉSE!!! */
